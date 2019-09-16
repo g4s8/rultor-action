@@ -1,4 +1,4 @@
-GitHub action as [Rultor](https://github.com/yegor256/rultor):
+[Rultor](https://github.com/yegor256/rultor) as GitHub action:
 1) add action to PR review workflow,
 2) put merge comment into review comments
 3) this action will merge PR into master with running
