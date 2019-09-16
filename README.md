@@ -30,6 +30,23 @@ you may call it `.github/worflows/rultor.yml`
      token: ${{ secrets.GITHUB_TOKEN }}
  ```
 
+Workflow example:
+```yml
+---
+name: rultor
+"on": pull_request_review
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Rultor
+        uses: g4s8/rultor-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+```
+
 Now you can put `merge` message in PR review comments,
 and this action will checkout into `origin/master`, merge
 PR branch into `master`, run tests defined in `.rultor.yml`,

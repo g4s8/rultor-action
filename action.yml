@@ -20,12 +20,15 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 ---
-name: 'Rultor'
+name: 'rultor-action'
 description: 'Rultor as GitHub action'
 inputs:
   token:
     description: "github token"
     requred: true
+branding:
+  icon: git-pull-request
+  color: gray-dark
 runs:
   using: 'docker'
   image: 'Dockerfile'
