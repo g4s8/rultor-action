@@ -25,7 +25,7 @@ description: 'Rultor as GitHub action'
 inputs:
   token:
     description: "github token"
-    requred: true
+    required: true
 branding:
   icon: git-pull-request
   color: gray-dark
